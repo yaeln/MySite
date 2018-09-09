@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+ <head>
+   <title>My project</title>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="css/CETEIcean.css" />
+   <link rel="stylesheet" href="css/style.css" />
+
+   <script src="js/CETEI.js"></script>
+ </head>
+ <body>
+   <div id="TEI"></div>
+   <script>
+     var CETEIcean = new CETEI()
+     CETEIcean.addBehaviors({
+     handlers: {
+       "supplied": [ "[" ,  "]" ],
+       "persName": function(el) {
+          var a = document.createElement("a")
+          a.setAttribute("href", el.getAttribute("ref"))
+          a.innerHTML = el.innerHTML;
+          return a
+      }
+
+     }
+   })
+
+     CETEIcean.getHTML5("data/shimon_adaf.xml", function(data) {
+      document.getElementById("TEI").appendChild(data)
+      var substitutions = document.querySelectorAll("tei-subst")
+       substitutions.forEach( function(subst){
+            subst.querySelector("tei-add").addEventListener("click", function(){
+                 var del = subst.querySelector("tei-del")
+                 if (window.getComputedStyle(del).getPropertyValue("display") == "none") {
+                     del.style.display = "inline"
+                }  else {
+                     del.style.display = "none"
+                }
+           })
+       })
+     })
+   </script>
+ </body>
+</html>

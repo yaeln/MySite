@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/xsl" href="custom.xsl"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="heb">שמעון אדף</title>
+            <title level="m">לקסיקון הקשרים לסופרים ישראלים</title>
+            <author xml:lang="heb">הדס שבת-נדיר </author>
+            <author>בתיה שמעוני</author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>מכון הקשרים והוצאת דביר</publisher>
+            <pubPlace>אור יהודה ובאר שבע</pubPlace>
+            <date when="2014"/>
+
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+
+      </fileDesc>
+      <!--<encodingDesc>
+
+         <tagsDecl>
+            <rendition xml:id="blue" scheme="css">
+               color:blue;
+            </rendition>
+            <rendition xml:id="red" scheme="css">
+               color:red;
+            </rendition>
+            <rendition xml:id="cyan" scheme="css">
+               color:cyan;
+            </rendition>
+            <rendition xml:id="i" n="teibp:italic" scheme="css">
+               font-style:italic;
+            </rendition> 
+           
+            <rendition xml:id="green"  scheme="css">
+               color:green;
+            </rendition> 
+            <rendition xml:id="right" n="teibp:right" scheme="css">
+               text-align:right;
+            </rendition>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="body" render="#right"/>
+               <tagUsage gi="p" render="#right"/>
+               <tagUsage gi="persName" render="#blue"/>
+               <tagUsage gi="orgName" render="#i #green"/>
+               <tagUsage gi="placeName" render="#cyan"/>
+               <tagUsage gi="name" render="#red"/>
+            </namespace>
+         </tagsDecl>
+      </encodingDesc>-->
+   </teiHeader>
+   <text xml:lang="he">
+      <body>
+         <head><persName><surname>אדף</surname>, <forename>שמעון</forename> (<date when="1972"
+                  type="birth">1972</date>) <roleName>משורר, סופר, עורך
+               ומוזיקאי</roleName></persName></head>
+         <div>
+            <div type="bio">
+               <p><seg rend="dropInit">נ</seg>ולד ב<placeName type="city">שדרות</placeName>. למד בבית ספר יסודי ממלכתי-דתי בעיר
+                  הולדתו. בחטיבת הביניים עבר לישיבה של <orgName>ש"ס</orgName>, עזב אחרי חצי שנה
+                  והשלים את לימודיו בתיכון חילוני <supplied>הוא ניסה ללמוד באוניברסיטה ולא התמיד</supplied></p>
+               
+            </div>
+
+            <div type="publications">
+               <p> שיריו הראשונים התפרסמו בתקופת שירותו הצבאי בכתבי העת<name type="journal">
+                     מאזניים</name>, <name type="journal">עתון 77</name> ו<name type="journal"
+                     >עכשיו</name>. ב-<date when="1993">1993</date> היה בין מייסדי כתב העת <name
+                        type="journal">אֵב</name>, לצד <persName>דורי מנור</persName>, <persName ref="https://viaf.org/viaf/2535006/">אורי
+                     פקלמן</persName>, <persName>רועי גרינולד</persName> ו<persName>גל
+                     קובר</persName>, ובו פירסם משיריו. ב-<date>1994</date> עבר
+                     מ<placeName>שדרות</placeName> ל<placeName>תל אביב</placeName>, וכעבור שלוש שנים
+                  ראה אור ספר שיריו הראשון, <name type="book">המונולוג של איקרוס</name>
+                     (<orgName>גוונים</orgName>, <date>1997</date>), שזכה ב<name type="prize">פרס
+                     משרד החינוך לעידוד ספרי ביכורים</name> ונכנס היישר לתוכנית הלימודים. בשנים
+                     <date>2000-2005</date> כיהן כעורך ספרי המקור של <orgName type="publication"
+                     >הוצאת כתר</orgName>. מהסופרים שערך: <persName>עינת יקיר</persName>,
+                     <persName>אופיר טושה גפלה</persName>, <persName>דודו בוסי</persName>
+                     ו<persName>ניר ברעם</persName>. ב-<date>2002</date> הופיע ספר שיריו השני, <name
+                     type="book">מה שחשבתי צל הוא הגוף האמיתי</name> (<date>2002</date>), שצורף אליו
+                  דיסק ובו שישה שירים מולחנים מהספר. בשנים הבאות פירסם <persName>אדף</persName> כמה
+                  ספרי פרוזה: <name type="book">קילומטר ויומיים לפני השקיעה</name>, רומן בלשי
+                     (<date>2004</date>); <name type="book">הלב הקבור</name>, ספר פנטזיה
+                     (<date>2006</date>); ואת הטרילוגיה ורד יהודה הכוללת את <name type="book"
+                     >כפור</name> (<date>2010</date>), <name type="book">מוקס נוקס</name>
+                  <date>(2011</date>, שהיה מועמד ל<name type="prize">פרס ספיר</name>) ו<name
+                     type="book">ערים של מטה</name> (<date>2012</date>). ב-<date>2009</date> ראה אור
+                  ספר שיריו <name type="book">אביבה-לא</name> שבו הגיב על מותה הפתאומי של אחותו.
+                  הספר התקבל בהתלהבות יוצאת דופן וזכה ב<name type="prize">פרס היוקרתי לשירה על שם
+                        <persName>יהודה עמיחי</persName></name>. במקביל כתב שירים ללהקת <name
+                     type="band">"כנסיית השכל"</name>, ל<persName>ברי סחרוף</persName>
+                        ול<persName><persName>חיים אוליאל</persName></persName>. ב-<date>1996</date>
+                  השתתף בכתיבה ובהקלטה של צורך, אלבומה הראשון של להקת <name type="band"
+                     >"האצולה"</name>, שהתפרקה זמן קצר לאחר מכן. ב-<date>2005</date> פירסם באינטרנט
+                  את האלבום הקצר <name type="album">עוד מעט ירד הקיץ</name>. בנוסף ערך, עם
+                     <persName>אורנה בן דור</persName> ו<persName>יאיר גרבוז</persName>, את תוכנית
+                  הטלוויזיה <name type="tv_show">דו"ח אינטימי</name></p>
+            </div>
+
+            <div type="style">
+               <p> רוב מאמרי הביקורת שנכתבו על <persName>אדף</persName> תיארו אותו כקול חדש וחשוב
+                  בספרות העברית, אבל מיקמו אותו באופנים שונים במשבצת של היוצר המזרחי מהפריפריה.
+                  ביצירותיו וברשימות שכתב הוא מערער על המיקום הזה, משרטט אזורי גבול חדשים בין המרכז
+                  לפריפריה ובין <placeName>שדרות</placeName> ל<placeName>תל אביב</placeName>, וכך
+                  טורף את המונחים השגורים ומערער על המיקומים המוכנים מראש. בה בעת הוא הופך את חוויית
+                  הדחייה והכיעור-לכאורה שמעוררת הפריפריה לפנטזיה מיתית עוצמתית, אך בלי להסתיר את
+                  הסדקים הנבעים בפנטזיה ומשבשים אותה. כבר בתחילת דרכו ביקש להתכונן כמרכז אוניברסלי,
+                  לא מקומי ולא מסוים, ומשם ביקש לחבור אל המקומי והפריפריאלי. התנועה בין אוניברסליות
+                  ללוקליות, מיתולוגיה מערבית וביוגרפיה אישית מאפיינת את כל כתביו, בדרכים שונות
+                  ומגוונות. ב<name type="book">המונולוג של איקרוס</name>, ספרו הראשון, נחשפות תדיר,
+                  מבעד למונולוג האוניברסלי ולדמויות הגיבורים המיתולוגיים, חוויות אישיות מן הפריפריה.
+                  במה שחשבתי צל הוא הגוף האמיתי, ספרו השני, מתגלה קולו הפרטי, החושף את יחסו המורכב
+                  אל הביוגרפיה האישית שלו: <quote>"אֲנִי עוֹד אֶתְעוׂרֵר מֵחֲלוׂם הַבְּעָתָה שֶל
+                     הַבִּיוׂגְרַפְיָה"</quote>, הוא מכריז בשיר החותם את הספר. גם לאחר שנות חיים
+                     ב<placeName>תל אביב</placeName> חוזר אדף ל<placeName>שדרות</placeName>, ובתהליך
+                  של הסתכלות לאחור מתעורר מחדש הקיבעון לילדות כתחושות בלתי פתורות שמעוררת בו
+                  הביוגרפיה שלו. תנועה מרחבית תואמת, המשלבת עיסוק בסצנת הרוק
+                     ב<placeName>שדרות</placeName> ובחיי האקדמיה ב<placeName>תל אביב</placeName>,
+                  משמשת ציר מרכזי בעלילת הרומן <name>קילומטר ויומיים לפני השקיעה</name>. עלילת הלב
+                  הקבור מתרחשת בין שני מרחבים מקבילים: <subst><del>עיירה קטנה בדרום הארץ ומרחב פנטסטי,</del><add>מרחב פריפראילי</add></subst> אוטונומי
+                  לכאורה, השואב את דימוייו מהמקרא ומההגות היהודית בימי הביניים. פתיחת הרומן פנים
+                  צרובי חמה טומנת בחובה הבטחה לאוֹרי, ילדה בת שתים-עשרה מנתיבות, להיות בעלת קול
+                  עצמאי וכוחות נבואיים. אך הכוחות האלוהיים שניתנו לה לא עומדים לה בבואה למנוע את מות
+                  אמה ואת התרסקות משפחתה, ומתוך מפח נפש היא מחליטה לוותר עליהם. בניסיון לברוח מן
+                  המציאות שאליה נקלעה, אורי מקימה משפחה משלה בתל אביב. אך ההחלטה לוותר על הכוחות
+                  האלוהיים מובילה אותה להסתגר בעצמה עד כי אפילו קולות בעלה וילדתה נשמעים לה כצלילים
+                  רחוקים. ועם זאת, היא נותרת שבויה בחיפוש עקר אחר הקול האלוהי, שכעת נוכח כ"חסר"
+                  בתוכה; נוכחות נפקדת שעליה היא משלמת באובדן קולה העצמאי. בכתיבתו הייחודית יוצר אדף
+                  תצרפים עשירים, מקוריים ותובעניים של מחוזות, ז'אנרים וסגנונות שונים, הנדמים לעתים
+                  כמנוגדים ואף סותרים זה את זה: אוניברסליות ולוקליות, מרכז ופריפריה, שירה כתובה
+                  ומושרת, ספרות הגותית, ספרות בלשים ופנטזיה, עברית המעוגנת במקורות יהודיים מרבדים
+                  היסטוריים שונים ושפת יומיום</p>
+            </div>
+            <div type="present">
+               <p>החל מ-2012 משמש <persName>אדף</persName> כמרצה במחלקה לספרות עברית
+                     ב<orgName>אוניברסיטת בן-גוריון בנגב</orgName></p>
+            </div>
+         </div>
+         <div type="bibliogrphy">
+            <listBibl>
+               <bibl><author>בורשטיין, דרור</author>. <title level="a">"אורפיאוס משדרות"</title>
+                  <title level="j">הארץ תרבות וספרות</title>
+                  <date>12.4.2002.</date>
+                  <biblScope>2</biblScope></bibl>
+               <bibl><author>פדיה, חביבה</author>. <title level="a">"לא על דרך השירה אלא לפי
+                     כאב"</title>. <title level="m">הארץ ספרים</title>. <date>24.3.2010.</date>
+                  <biblScope>22-23</biblScope></bibl>
+               <bibl><author>קלדרון, נסים.</author>
+                  <title level="m">"צופן חדש". </title><title level="j">מעריב ספרות</title>.
+                     <date>26.4.2002.</date>
+                  <biblScope>27;</biblScope>
+               </bibl>
+               <bibl><author>שמואלוף, מתי. </author>"<title level="m">בין לבין – מיפוי טריטוריה
+                     מזרחית-ישראלית: אדף שמעון, 'קילומטר ויומיים לפני השקיעה'"</title>. <title
+                     level="j">מאזניים</title>
+                  <biblScope>ע"ט (5-4). </biblScope><date>2005</date>. <biblScope>73-72</biblScope>; </bibl>
+               <bibl>שוורץ, יגאל. "<title level="m">'כשחוני המעגל נפגש עם איקרוס', פריפריה ומרכז
+                     ברומן 'בחורף' לי"ח ברנר וברומן 'הלב הקבור' לשמעון אדף"</title>. <title
+                     level="j">מכאן</title>
+                  <biblScope>י"ב.</biblScope>
+                  <date>דצמבר 2012</date>. <biblScope>191-171</biblScope>. </bibl>
+            </listBibl>
+         </div>
+         <docAuthor> הדס שבת-נדיר ובתיה שמעוני </docAuthor>
+      </body>
+   </text>
+</TEI>

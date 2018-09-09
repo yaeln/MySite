@@ -1,0 +1,43 @@
+tei-div {
+    color : blue;
+}
+
+tei-supplied {
+  color : red;
+
+}
+
+
+tei-placeName {
+  font-weight: bolder;
+
+}
+
+tei-div[type="bibliography"]:before {
+  content:"ביבליוגרפיה";
+}
+
+tei-name[type="book"]{
+  color : "orange";
+  font-weight : bolder;
+}
+
+
+
+tei-seg[rend="dropInit"]{
+  font-size: 300%;
+  float: right;
+  line-height: 1em;
+  padding-right: 10px;
+}
+
+tei-subst > tei-del {
+  display: none;
+  text-decoration: line-through;
+}
+
+tei-subst > tei-add {
+color: red;
+cursor: pointer;
+
+}

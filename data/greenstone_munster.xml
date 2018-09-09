@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<!--?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/transcription-LLJ-html.xsl" type="text/xsl"?-->
+<?xml-stylesheet type="text/xsl" href="custom.xsl"?>
+
+<!--<?xml-stylesheet href="transcription-LLJ-html.xsl" type="text/xsl"?>-->
+<TEI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 haggadah.odd" xmlns="http://www.tei-c.org/ns/1.0"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>הגדת גרינסטון</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <textClass>
+            <classCode scheme="">
+               <interpGrp>
+                  <interp xml:id="הוראות">הוראות</interp>
+                  <interp xml:id="פסוקים ">פסוקים </interp>
+                  <interp xml:id="ברכת_הגפן">ברכת הגפן</interp>
+                  <interp xml:id="ברכת_קדושת_היום">ברכת קדושת היום</interp>
+                  <interp xml:id="ברכת_בורא_מאורי_האש">ברכת בורא מאורי האש</interp>
+                  <interp xml:id="ברכת_המבדיל">ברכת המבדיל</interp>
+                  <interp xml:id="ברכת_הזמן">ברכת הזמן</interp>
+                  <interp xml:id="ברכת_שעשה_נסים">ברכת שעשה נסים</interp>
+                  
+                  <interp xml:id="ברכת_נטילת_ידיים">ברכת נטילת ידיים</interp>
+                  <interp xml:id="ברכת_שטיפת_ידיים">ברכת שטיפת ידיים</interp>
+                  <interp xml:id="ברכת_בורא_פרי_האדמה">ברכת בורא פרי האדמה</interp>
+                  <interp xml:id="ברכת_בורא_פרי_העץ">ברכת בורא פרי העץ</interp>
+                  <interp xml:id="ברכת_אשר_ברא_הרים_ובקעות">ברכת אשר ברא הרים ובקעות</interp>
+                  <interp xml:id="ברכת_בורא_מיני_מעדנים">ברכת בורא מיני מעדנים</interp>
+                  <interp xml:id="ברכת_אשר_ברא_מיני_מעדנים">ברכת אשר ברא מיני מעדנים</interp>
+                  <interp xml:id="ברכת_בורא_מיני_נפשות">ברכת בורא מיני נפשות</interp>
+                  <interp xml:id="ברכת_בורא_נפשות">ברכת בורא נפשות</interp>
+                  <interp xml:id="ברכת_הטבלה_בחזרת">ברכת הטבלה בחזרת</interp>
+                  
+                  <interp xml:id="ההקדמה_הארמית">ההקדמה הארמית</interp>
+                  <interp xml:id="השאלות">השאלות</interp>
+                  <interp xml:id="עבדים_היינו">עבדים היינו</interp>
+                  <interp xml:id="תקציר_הגאולה_בארמית">תקציר הגאולה בארמית</interp>
+                  <interp xml:id="מעשה_ברבי_אליעזר ">מעשה ברבי אליעזר </interp>
+                  <interp xml:id="ארבעה_בנים">ארבעה בנים</interp>
+                  <interp xml:id="יכול_מראש_חודש">יכול מראש חודש</interp>
+                  <interp xml:id="מתחילה">מתחילה</interp>
+                  <interp xml:id="פתיחה_למדרש ">פתיחה למדרש </interp>
+                  <interp xml:id="המדרש ">המדרש </interp>
+                  <interp xml:id="דרשות_תנאים">דרשות תנאים</interp>
+                  <interp xml:id="דיינו ">דיינו </interp>
+                  <interp xml:id="משנת_רבן_גמליאל">משנת רבן גמליאל</interp>
+                  <interp xml:id="בכל_דור_ודור ">בכל דור ודור </interp>
+                  
+                  <interp xml:id="ברכת_ההלל ">ברכת ההלל </interp>
+                  <interp xml:id="הללויה_הללו ">הללויה הללו </interp>
+                  <interp xml:id="בצאת_ישראל ">בצאת ישראל </interp>
+                  <interp xml:id="ברכת_הגאולה">ברכת הגאולה</interp>
+                  <interp xml:id="_אתה_גאלת">טקסט משנה: אתה גאלת</interp>
+                  <interp xml:id="ברכת_זוכר_הברית">ברכת זוכר הברית</interp>
+                  <interp xml:id="ברכת_פסח_מצה_ומרורים ">ברכת פסח מצה ומרורים </interp>
+                  <interp xml:id="ברכת_רחיצת_ידיים">ברכת רחיצת ידיים</interp>
+                  <interp xml:id="ברכת_המוציא_לחם">ברכת המוציא לחם</interp>
+                  <interp xml:id="ברכת_המוציא_מצה">ברכת המוציא מצה</interp>
+                  <interp xml:id="ברכת_המצה">ברכת המצה</interp>
+                  <interp xml:id="ברכת_המרור">ברכת המרור</interp>
+                  <interp xml:id="ברכת_מצה_ומרור">ברכת מצה ומרור</interp>
+                  <interp xml:id="הוראות_לכורך">הוראות לכורך</interp>
+                  <interp xml:id="ברכה_אחת_מעין_שלוש">ברכה אחת מעין שלוש</interp>
+                  <interp xml:id="זכר_למקדש_כהלל">זכר למקדש כהלל</interp>
+                  <interp xml:id="פיוט">פיוט</interp>
+                  <interp xml:id="זימון">זימון</interp>
+                  <interp xml:id="ברכת_הזן">ברכת הזן</interp>
+                  <interp xml:id="ברכת_הארץ">ברכת הארץ</interp>
+                  <interp xml:id="ברכת_בונה_ירושלים">ברכת בונה ירושלים</interp>
+                  <interp xml:id="ברכת_הטוב_והמטיב">ברכת הטוב והמטיב</interp>
+                  <interp xml:id="הרחמן">הרחמן</interp>
+                  <interp xml:id="אמירות_שונות">אמירות שונות</interp>
+                  <interp xml:id="מלכנו_אלוהינו">מלכנו אלוהינו</interp>
+                  <interp xml:id="שפוך_חמתך">שפוך חמתך</interp>
+                  <interp xml:id="לא_לנו ">לא לנו </interp>
+                  <interp xml:id="אהבתי_את ">אהבתי את </interp>
+                  <interp xml:id="הללו_את ">הללו את </interp>
+                  <interp xml:id="הודו_לה ">הודו לה </interp>
+                  <interp xml:id="נשמת_כל_חי">נשמת כל חי</interp>
+                  <interp xml:id="ברכת_השיר ">ברכת השיר </interp>
+                  
+                  <interp xml:id="ברכה_אחת_מעין_שלש">ברכה אחת מעין שלש</interp>
+                  <interp xml:id="על_הגפן">טקסט משנה: על הגפן</interp>
+                  <interp xml:id="אמירות_חתימה">אמירות חתימה</interp>
+                  <interp xml:id="סימני_הסדר">סימני הסדר</interp>
+               </interpGrp>
+            </classCode>
+         </textClass>
+      </profileDesc>
+      
+      
+   </teiHeader>
+   <text>
+    <body xml:lang="he">
+<pb n="1" xml:id="Greenstone.01b"/>
+<div ana="#" xml:id="Greenstone.1" type="קידוש" n="1">
+
+<head style="align:center">קדוס פסח</head><lb/>
+   <ab  type="liturgUnit">
+   <seg type="liturgFormula"> ברוך אתה <term type="divine">ייי</term> אלהנו מלך<lb/>
+העלם</seg> בורא פרי הגפן<lb/></ab>
+
+   <ab type="liturgUnit"><seg type="liturgFormula">ברוך אתה <term type="Divine">ייי</term> אלהנו מלך<lb/>
+העלם</seg> אשר קדש ישראל<lb/>
+עמו מכל העמים ורצה<lb/>
+בהם מכל הלשונת ויתן<lb/>
+לנו <term type="Divine">ייי</term> אלהנו שבתות למנוחה<lb/>
+חגים וזמנים לששון את<lb/>
+יום השבת הזה את יום<lb/>
+חג המצות לשמחה<lb/>
+וליום טוב ולמקראי קדש<lb/>
+<lb/>
+<pb n="2" xml:id="Greenstone.02a"/>
+   
+כי בו עשה <term type="divine">ייי</term> אלהינו נסים<lb/>
+וגבורות לאהביו<lb/>
+ונפלאות לבני ידידיו<lb/>
+ברוך אתה  <term type="Divine">ייי</term> מקדש<lb/>
+ישראל והשבת וחג המצות<lb/>
+ומועדי שמחה והזמנים<lb/>
+ומקראי קדש:<lb/>
+ברוך אתה <term type="Divine">ייי</term> אלהינו מלך<lb/>
+העלם שהחינו וקימנו<lb/>
+והגיענו לזמן הזה<lb/>
+<lb/></ab>
+<pb n="3" xml:id="Greenstone.02b"/>
+   
+</div>
+<div xml:id="Greenstone.2" type="ברכת_הטיבולים" n="2">
+<ab>
+ברוך אתה <term type="Divine">ייי</term> אלהינו<lb/>
+מלך העלם אשר קדשנו<lb/>
+במצותיו וצונו על נטילת<lb/>
+ידים.            ברוך אתה<lb/>
+<term type="Divine">ייי</term> אלהנו מלך העלם בורא<lb/>
+פרי האדמה:<lb/>
+ברוך אתה <term type="Divine">ייי</term> אלהנו מלך<lb/>
+העלם בורא פרי העץ:<lb/>
+         ברוך אתה <term type="Divine">ייי</term><lb/>
+אלהנו מלך העלם אשר<lb/>
+<lb/>
+<pb n="4" xml:id="Greenstone.03a"/>
+ברא הרים ובקעות<lb/>
+ונטע בהם עץ כל<lb/>
+פרי ברוך אתה <term type="Divine">ייי</term> על<lb/>
+הארץ ועל פרי העץ:<lb/>
+  ברוך אתה <term type="Divine">ייי</term> אלהנו<lb/>
+מלך העלם בורא<lb/>
+מיני מעדנים:<lb/>
+   ברוך אתה <term type="Divine">ייי</term> אלהנו<lb/>
+מלך העלם אשר ברא<lb/>
+מיני מעדנים לעדן בהם<lb/>
+<lb/>
+<pb n="5" xml:id="Greenstone.03b"/>
+נפשות רבות ברוך אתה<lb/>
+<term type="Divine">ייי</term> על הארץ ועל מעדניה<lb/>
+        ברוך אתה <term type="Divine">ייי</term><lb/>
+אלהנו מלך העלם<lb/>
+בורא מיני נפשות:<lb/>
+                    ברוך אתה<lb/>
+<term type="Divine">ייי</term> אלהינו מלך העלם<lb/>
+אשר ברא נפשות<lb/>
+טהרות להחיות<lb/>
+בהם נפש כל חי<lb/>
+<lb/>
+<pb n="6" xml:id="Greenstone.04a"/>
+ברוך אתה <term type="Divine">ייי</term> חי<lb/>
+העולמים:<lb/>
+</ab></div>
+<div xml:id="Greenstone.3" type="הגדה" n="3">
+<ab>
+</ab></div>
+<div xml:id="Greenstone.4" type="השאלות" n="4">
+<ab>
+    מה נשתנה<lb/>
+הלילה הזה מכל<lb/>
+הלילות שבכל<lb/>
+הלילות <del>אין</del> אנו מטבלין <add>פעם אחת</add><lb/>
+והלילה הזה שתי<lb/>
+פעמים שבכל<lb/>
+הלילות אנו אוכלים<lb/>
+חמץ ומצה הלילה הזה כלו מצה<lb/>
+<lb/>
+<pb n="7" xml:id="Greenstone.04b"/>
+<add>שבכל לילות אנו אוכלים</add><lb/>
+בשר צלי שלוק ומבשל<lb/>
+הלילה הזה כלו צלי<lb/>
+לפי דעתו של בן אביו<lb/>
+מלמדו מתחיל בגנות<lb/>
+ומסיים בשבח<lb/>
+ואומר בעבר<lb/>
+הנהר ישבו אבתיכם<lb/>
+מעלם תרח אבי אברהם<lb/>
+ואבי נחור ויעבדו<lb/>
+<lb/>
+<pb n="8" xml:id="Greenstone.05a"/>
+אלהים אחרים ואקח<lb/>
+את אביכם את<lb/>
+אברהם מעבר הנהר<lb/>
+ואולך אתו בכל ארץ<lb/>
+כנען וארבה את זרעו<lb/>
+ואתן לו את יצחק ואתן<lb/>
+ליצחק את יעקב ואת<lb/>
+עשו ואתן לעשו את<lb/>
+הר שעיר לרשת אתו<lb/>
+ויעקב ובניו ירדו מצרימה<lb/>
+<lb/>
+<pb n="9" xml:id="Greenstone.05b"/>
+</ab></div>
+<div xml:id="Greenstone.5" type="פתיחה_למדרש" n="5">
+<ab>
+ברוך שומר הבטחתו<lb/>
+שלישראל ברוך הוא<lb/>
+שהקודש מחשב את<lb/>
+הקץ {לעשות ליעקב אבינו<lb/>
+שפרעה הרשע לא גזר<lb/>
+אלא על הזכרים לבן בקש<lb/>
+לעקור את הכל שנ' ארמי}<lb/>
+כמשאמר לאברהם<lb/>
+אבינו בין הבתרים שנ'<lb/>
+ויאמר לאברם ידוע<lb/>
+<lb/>
+<pb n="10" xml:id="Greenstone.06a"/>
+תדע כי גר יהיה זרעך בארץ<lb/>
+לא להם ועבדום וענו אותם<lb/>
+ארבע מאות שנה: היא<lb/>
+שעמדה לאבותינו ולנו שלא<lb/>
+אחד בלבד עמד עלינו<lb/>
+   לכלותינו ו<choice><abbr type="acronym"><metamark rend="interlinear dots" >הקבה</metamark></abbr><expan>הקדוש ברוך הוא</expan></choice> מצילינו מידם<lb/>
+</ab></div>
+<div xml:id="Greenstone.6" type="המדרש" n="6">
+<ab> צא ולמד מה בקש לבן<lb/> הארמי לעשות ליעקב אבינו<lb/> שפרעה הרשע לא גזר אלא<lb/> על הזכרים ולבן
+               בקש לעקור<lb/> את הכל שנאמר ארמי אובד<lb/> אבי וירד מצרימה אנוסה<lb/>
+               <lb/>
+               <pb n="11" xml:id="Greenstone.06b"/> על פי הדבר ויגר שם במתי<lb/> מעט ויהי שם לגוי
+               גדול עצום<lb/> ורב וירעו אותנו המצרים<lb/> ויענונו ויתנו עלינו עבודה<lb/> קשה. ונצעק
+               אל <term type="Divine">ייי</term> אלהי<lb/> אבותינו וישמע <term type="Divine">ייי</term> את קולינו<lb/> וירא את ענינו ואת עמלינו<lb/> ואת
+               לחצינו ויוציאינו <term type="Divine">ייי</term><lb/> ממצרים לא על ידי מלאך לא<lb/> על ידי שרף לא על ידי
+   שליח<lb/> אלא <choice><abbr><metamark rend="interlinear dots" function="acronym">הקבה</metamark></abbr><expan>הקדוש ברוך הוא</expan></choice> <choice><abbr><metamark rend="interlinear dots" function="acronym">הקבה</metamark></abbr><expan>הקדוש ברוך הוא</expan></choice>  בעצמו ביד<lb/> חזקה שתים בזרוע נטויה<lb/>
+               <lb/>
+               <pb n="12" xml:id="Greenstone.07a"/> שתים במורא גדול שתים<lb/> באותות שתים
+               ובמופתים<lb/> שנים אלו עשר מכות שהביא<lb/> המקום ברוך הוא על המצרים<lb/> במצרים ואלו
+               הן דם צפרדיע<lb/> כנים ערוב דבר שחין ברד<lb/> ארבה חו<del>ס</del><add>ש</add>ך מכות
+               בכורות<lb/> והוציאנו משם שנאמר<lb/> אותנו הוציא משם.</ab></div><div xml:id="Greenstone.7" type="משנת_רבן_גמליאל" n="7"><ab>
+רבן<lb/>
+גמליאל אומר כל שלא אומר<lb/>
+שלושה דברים אילו בפסח<lb/>
+לא יצא ידי חובתו. פסח<lb/>
+<lb/>
+<pb n="13" xml:id="Greenstone.07b"/>
+מצה ומרורים. פסח על שום<lb/>
+שפסח המקום ברוך הוא על<lb/>
+בתי אבותינו במצרים שנא'<lb/>
+ואמרתם זבח פסח הוא ל<term type="Divine">ייי</term><lb/>
+אשר פסח על בתי בני ישראל<lb/>
+במצרים בנגפו את מצרים<lb/>
+ואת בתינו הציל ויקוד העם<lb/>
+וישתחוו.          מרורים על<lb/>
+שום שמררו המצרים את<lb/>
+חיי אבותינו במצרים שנא'<lb/>
+וימררו את חייהם בעבודה<lb/>
+קשה בחומר ובלבנים ובכל<lb/>
+<lb/>
+<pb n="14" xml:id="Greenstone.08a"/>
+עבודה בשדה את כל<lb/>
+עבודותם אשר עבדו בהם<lb/>
+בפרך.    מצה על שום<lb/>
+שנגאלו. שנאמר ויאפו<lb/>
+את הבצק אשר הוציאו<lb/>
+ממצרים עוגות מצות כי לא<lb/>
+חמץ כי גרשו ממצרים<lb/>
+ולא יכלו להתמהמה וגם<lb/>
+צדה לא עשו להם.   <lb/>
+</ab></div>
+<div xml:id="Greenstone.8" type="בכל_דור_ודור" n="8">
+<ab>
+בכל<lb/>
+דור ודור חייב אדם לראות<lb/>
+את עצמו כאילו הוא יצא<lb/>
+ממצרים שנא' והגדת לבנך<lb/>
+<lb/>
+<pb n="15" xml:id="Greenstone.08b"/>
+ביום ההוא לאמר בעבור זה<lb/>
+עשה <term type="Divine">ייי</term> לי בצאתי ממצרים<lb/>
+לפיכך אנו חייבים להודות<lb/>
+להלל לשבח לפאר לרומם<lb/>
+לגדל ל<add>נ</add>צח למי שעשה לנו<lb/>
+ולאבותינו את כל הנסים<lb/>
+האלו והוציאנו מעבדות<lb/>
+לחרות ונאמר לפניו <lb/>
+</ab></div>
+<div xml:id="Greenstone.9" type="הלל" n="9">
+<ab>
+הללויה<lb/>
+הללו עבדי <term type="Divine">ייי</term> הללו את שם<lb/>
+<term type="Divine">ייי</term> יהי שם <term type="Divine">ייי</term> מבורך מעתה<lb/>
+ועד עולם ממזרח שמש עד<lb/>
+מבואו מהולל שם <term type="Divine">ייי</term> רם על<lb/>
+<lb/>
+<pb n="16" xml:id="Greenstone.09a"/>
+כל גוים <term type="Divine">ייי</term> על השמים כבודו<lb/>
+מי כ<term type="Divine">ייי</term> אלהינו המגביהי<lb/>
+לשבת המשפילי לראות<lb/>
+בשמים ובארץ מקימי<lb/>
+מעפר דל מאשפות ירים<lb/>
+אביון להושיבי עם נדיבים<lb/>
+עם נדיבי עמו מושיבי<lb/>
+עקרת הבית אם הבנים<lb/>
+שמחה הללויה.    בצאת<lb/>
+ישראל ממצרים בית<lb/>
+יעקב מעם לועז היתה<lb/>
+<lb/>
+<pb n="17" xml:id="Greenstone.09b"/>
+יהודה לקדשו ישראל<lb/>
+ממשלותיו הים ראה וינוס<lb/>
+הירדן יסוב לאחור ההרים<lb/>
+רקדו כאלים גבעות כבני<lb/>
+צאן מלפני אדון חולי ארץ<lb/>
+מלפני אלוה יעקב ההופכי<lb/>
+הצור אגם מים חלמיש<lb/>
+למעינו מים:     
+<expan><abbr>ב</abbr><ex></ex></expan><lb/>
+אשר גאלנו וגאל את אבותינו<lb/>
+ממצרים והגיענו ללילה הזה<lb/>
+לאכל בו מצות ומרורים<lb/>
+<lb/>
+<pb n="18" xml:id="Greenstone.10a"/>
+כן אלהנו ואלהי אבתינו יגיענו<lb/>
+לרגלים הבאים לקראתינו<lb/>
+לשלום שמחים בבנין עירך<lb/>
+ששים בעבודתך ונאכל שם<lb/>
+מן הזבחים ומן הפסחים<lb/>
+שיגיע דמם על קיר מזבחך<lb/>
+לרצון ונודה לך שיר חדש<lb/>
+על גאולתינו ברוך אתה <term type="Divine">ייי</term><lb/>
+גאל ישראל: <lb/>
+</ab></div>
+<div xml:id="Greenstone.10" type="ברכות_הסעודה" n="10">
+<ab>
+   ברוך אתה <term type="Divine">ייי</term> אלהנו<lb/>
+מלך העלם אשר קדשנו<lb/>
+במצותיו וצונו על אכילת<lb/>
+מצה ומרור הלילה הזה<lb/>
+להזכיר גבורתו שלמלך<lb/>
+<lb/>
+<pb n="19" xml:id="Greenstone.10b"/>
+מלכי המלכים ברוך הוא<lb/>
+שעשה נסים לאבתינו בזמן<lb/>
+הזה בעבור אברהם יצחק<lb/>
+ויעקב ברוך אתה <term type="Divine">ייי</term> זוכר<lb/>
+הברית: ברוך אתה <term type="Divine">ייי</term> אלהנו<lb/>
+מלך העלם המוצא לחם מן<lb/>
+הארץ אמן:<lb/>
+</ab></div>
+<div xml:id="Greenstone.11" type="ברכת_המזון" n="11">
+<ab>
+    ברכה<lb/>
+נברך שאכלנו משלו ומטבו<lb/>
+חיינו ברוך אתה <term type="Divine">ייי</term> אלהנו מלך<lb/>
+העלם אז בפסח גאלתה<lb/>
+דורשי הוד כבודך הצלת<lb/>
+והושעת זכר עשי עגות<lb/>
+<lb/>
+<pb n="20" xml:id="Greenstone.11a"/>
+ככ' וימהר אברהם האלה<lb/>
+אל שרה ויאמר מהרי שלש<lb/>
+סאים קמח סלת לושי ועשי<lb/>
+עוגות ונ' פותח את ידיך<lb/>
+ומשביע לכל חי רצון ברוך<lb/>
+אתה <term type="Divine">ייי</term> הזן את הכול.<lb/>
+זאת חקת הפסח טהרת<lb/>
+ידידים כלם יצאו שמחים<lb/>
+שמור את חודש האביב<lb/>
+ככ' שמור את חודש האביב<lb/>
+ועשית פסח ל<term type="Divine">ייי</term> אלהיך כי<lb/>
+בחודש האביב הוצאך <term type="Divine">ייי</term><lb/>
+אלהיך ממצרים לילה ונ'<lb/>
+<lb/>
+<pb n="21" xml:id="Greenstone.11b"/>
+ואכלת ושבעת וברכת את<lb/>
+<term type="Divine">ייי</term> אלהיך על הארץ הטובה<lb/>
+אשר נתן לך וזכור לנו <gap extent="1" unit="chars"/><lb/>
+   <gap extent="1" unit="chars"/>שבת<gap extent="2" unit="chars"/><lb/>
+<gap extent="3" unit="chars"/><lb/>
+<gap extent="3" unit="chars"></gap><lb/>
+מצות פסח ומילה נתתה<lb/>
+לאבותינו <gap extent="2" unit="chars"/><lb/>
+<gap extent="3" unit="chars"/><lb/>
+<gap extent="3" unit="chars"/><lb/>
+<gap extent="3" unit="chars"/><lb/>
+זבח פסח הוא ל<term type="Divine">ייי</term> אשר<lb/>
+פסח ל בתי בני ישראל<lb/>
+</ab></div>
+
+
+
+    </body>  
+   </text>
+</TEI>

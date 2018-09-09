@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <l style="direction: rtl"><ref target="https://shironet.mako.co.il/artist?type=lyrics&amp;lang=1&amp;prfid=108&amp;wrkid=4151">אהבה היא שיר לשניים</ref></l>
+               <l style="direction: rtl">מילים: עדנה פלג</l>
+               <l style="direction: rtl">לחן: אלדד שרים</l>
+               <l style="direction: rtl">מבצעת: <ref target="https://he.wikipedia.org/wiki/%D7%90%D7%99%D7%9C%D7%A0%D7%99%D7%AA">אילנית</ref></l>
+               <l style="direction: rtl">מקור: <ref target="https://shironet.mako.co.il">שירונט</ref></l>
+               <l style="direction: rtl">שנה: 1977</l>
+            </title>
+            <respStmt>
+               <resp>Lyrics by</resp>
+               <name role="author" type="person"><persName><forename>עדנה</forename> <surname>פלג</surname></persName></name>
+            </respStmt>
+            <respStmt>
+               <resp>Composed by</resp>
+               <name role="composer" type="person"><persName><forename>אלדד</forename> <surname>שרים</surname></persName></name>
+            </respStmt>
+            <respStmt>
+               <resp>Sung by</resp>
+               <name role="singer" type="person"><persName><forename>אילנית</forename></persName></name>
+            </respStmt>
+            <respStmt>
+               <resp>Publication Date</resp>
+               <name role="year"><date>1977</date></name>            
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>שירונט</distributor>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>שירונט</bibl>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <head style="direction: rtl">אהבה היא שיר לשניים</head>
+         
+         <lg type="verse" rhyme="--aa">
+            <l style="direction: rtl">כן, כן, זה שוב מתנגן</l> 
+            <l style="direction: rtl">זמר שיר ישן נושן</l> 
+            <l style="direction: rtl">שנכתב מחדש <rhyme>בשבילך</rhyme></l> 
+            <l style="direction: rtl">אשיר אותו <rhyme>לך</rhyme></l> 
+         </lg>
+         
+         <lg type="verse">
+            <l style="direction: rtl">ושוב עונים הכינורות </l>
+            <l style="direction: rtl">אף אני כמו מיתר שנועד למנגינה אחת - </l>
+            <l style="direction: rtl">למנגינה שלך</l>
+         </lg> 
+         
+         <lg type="chorus" rhyme="aa">
+            <l style="direction: rtl">ישירו <rhyme>השמיים</rhyme></l> 
+            <l style="direction: rtl">אהבה היא שיר <rhyme>לשניים</rhyme> </l>
+            <l style="direction: rtl">העולם כולו צוחק אלי ושר</l> 
+            <l style="direction: rtl">כמה טוב, כמה טוב!</l>
+         </lg> 
+         
+         <lg type="chorus" rhyme="aa">
+            <l style="direction: rtl">ישירו <rhyme>השמיים</rhyme></l> 
+            <l style="direction: rtl">אהבה היא שיר <rhyme>לשניים</rhyme></l> 
+            <l style="direction: rtl">כי שירי הוא השיר שלך</l> 
+         </lg>
+         
+         <lg type="verse">
+            <l style="direction: rtl">כן, כן, זה שוב מתנגן </l>
+            <l style="direction: rtl">זמר שיר ישן נושן</l> 
+            <l style="direction: rtl">שהיום פה בשניים נשיר,</l> 
+            <l style="direction: rtl">בשניים נשיר</l> 
+            <l style="direction: rtl">כי השיר לא נגמר </l>
+            <l style="direction: rtl">תמיד הוא יושר, תמיד!</l>
+         </lg> 
+         
+         <lg type="chorus">
+            <l style="direction: rtl">ישירו השמיים...</l>
+         </lg>
+      </body>
+  </text>
+</TEI>
